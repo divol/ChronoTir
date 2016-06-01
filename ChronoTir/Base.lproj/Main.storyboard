@@ -52,18 +52,24 @@
                                     <constraint firstItem="XTV-ie-Yhp" firstAttribute="centerY" secondItem="9Wx-zo-bEK" secondAttribute="centerY" id="ga3-De-aaO"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DN9-7N-CBE" customClass="VPRangeSlider">
+                                <rect key="frame" x="130" y="385" width="340" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="9Wx-zo-bEK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AD8-np-viA"/>
                             <constraint firstItem="9Wx-zo-bEK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dZZ-Mp-m9H"/>
+                            <constraint firstItem="DN9-7N-CBE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g7g-ki-cLx"/>
                             <constraint firstItem="71C-mu-M6q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jhY-jc-LXM"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="71C-mu-M6q" secondAttribute="bottom" id="pLr-Um-3JL"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="centerview" destination="9Wx-zo-bEK" id="WCL-aJ-Qx5"/>
+                        <outlet property="rangeSlider" destination="DN9-7N-CBE" id="XOh-z2-5aY"/>
                         <outlet property="timeLabel" destination="XTV-ie-Yhp" id="Fjf-fX-9Uh"/>
                         <outlet property="timePreference" destination="QyU-I9-j0y" id="5Oa-Sb-J1Z"/>
                     </connections>

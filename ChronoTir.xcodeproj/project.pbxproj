@@ -15,6 +15,7 @@
 		38658DB41CBC09AF00BB1A3E /* bip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 38658DB11CBC09AF00BB1A3E /* bip.wav */; };
 		38658DB51CBC09AF00BB1A3E /* bip2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 38658DB21CBC09AF00BB1A3E /* bip2.wav */; };
 		38658DB61CBC09AF00BB1A3E /* bip3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 38658DB31CBC09AF00BB1A3E /* bip3.wav */; };
+		E104B86F1CFF0BD700306C01 /* VPRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = E104B86E1CFF0BD700306C01 /* VPRangeSlider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,9 @@
 		38658DB11CBC09AF00BB1A3E /* bip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bip.wav; sourceTree = "<group>"; };
 		38658DB21CBC09AF00BB1A3E /* bip2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bip2.wav; sourceTree = "<group>"; };
 		38658DB31CBC09AF00BB1A3E /* bip3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bip3.wav; sourceTree = "<group>"; };
+		E104B86B1CFF0B7300306C01 /* ChronoTir-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChronoTir-Bridging-Header.h"; sourceTree = "<group>"; };
+		E104B86D1CFF0BD700306C01 /* VPRangeSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPRangeSlider.h; sourceTree = "<group>"; };
+		E104B86E1CFF0BD700306C01 /* VPRangeSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPRangeSlider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,8 @@
 		3846C5C91CBB97ED007C116A = {
 			isa = PBXGroup;
 			children = (
+				E104B86B1CFF0B7300306C01 /* ChronoTir-Bridging-Header.h */,
+				E104B86C1CFF0BD700306C01 /* VPRangeSlider */,
 				3846C5D41CBB97ED007C116A /* ChronoTir */,
 				3846C5D31CBB97ED007C116A /* Products */,
 			);
@@ -71,6 +77,15 @@
 				38658DB31CBC09AF00BB1A3E /* bip3.wav */,
 			);
 			path = ChronoTir;
+			sourceTree = "<group>";
+		};
+		E104B86C1CFF0BD700306C01 /* VPRangeSlider */ = {
+			isa = PBXGroup;
+			children = (
+				E104B86D1CFF0BD700306C01 /* VPRangeSlider.h */,
+				E104B86E1CFF0BD700306C01 /* VPRangeSlider.m */,
+			);
+			path = VPRangeSlider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3846C5D81CBB97ED007C116A /* ViewController.swift in Sources */,
+				E104B86F1CFF0BD700306C01 /* VPRangeSlider.m in Sources */,
 				3846C5D61CBB97ED007C116A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +286,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.niccheva.ChronoTir;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ChronoTir-Bridging-Header.h";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "ChronoTir-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -283,6 +301,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.niccheva.ChronoTir;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ChronoTir-Bridging-Header.h";
 			};
 			name = Release;
 		};
