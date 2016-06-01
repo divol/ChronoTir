@@ -13,7 +13,8 @@ class ViewController: UIViewController {
 
 	@IBOutlet weak var timeLabel: UILabel!
 	@IBOutlet weak var timePreference: UISwitch!
-
+    @IBOutlet weak var centerview:UIView!
+    
 	var timer = NSTimer()
 	var count = 10
 	var tapRecognizer: UITapGestureRecognizer!
@@ -30,6 +31,17 @@ class ViewController: UIViewController {
 		self.tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.manageTimer))
 		self.view.addGestureRecognizer(tapRecognizer)
 		self.initViewWithValue(10, andColor: UIColor.redColor())
+        
+        timeLabel.font = UIFont(name: "DBLCDTempBlack", size: 60.0)
+        
+        timeLabel.textColor = UIColor.greenColor()
+        timeLabel.backgroundColor = UIColor.blackColor()
+        
+        
+        centerview.layer.cornerRadius = 10.0;
+        centerview.layer.masksToBounds = true;
+        
+        
 		self.updateLabel()
 	}
 	
